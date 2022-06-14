@@ -9,7 +9,7 @@ Il est attendu un fichier de type **.xls** en entrée et est produit un fichier 
 
 2. Choisissez ensuite le fichier Excel que vous souhaitez convertir.
 
-![Drag Racing](assets/1.png)image.png
+![Drag Racing](assets/1.png)
 
 3. Choisissez ensuite le **type de fichier** puis cliquer sur **Formatter**.
 
