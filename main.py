@@ -151,12 +151,13 @@ class Formatter():
     def init_gui(self):
         sg.theme('DarkAmber')   # Add a touch of color
         # All the stuff inside your window.
-        layout = [  [sg.Text('Quel type de fichier ?')],
-                    [sg.Text("Choisissez votre fichier: "), sg.FileBrowse()],
+        layout = [  
+                    [sg.Text("Choisissez votre fichier: "), sg.FileBrowse("Ouvrir un fichier",file_types=(("Fichier Excel 97-2003", "*.xls"),))],
+                    [sg.Text('Quel type de fichier ?')],
                     # [sg.Text("Choisissez la nature du fichier: ")],
                     [sg.Radio('Journaux Provisoire', "RADIO1", default=True)],
                     [sg.Radio('Compte Mandat', "RADIO1", default=False)],
-                    [sg.Button('Formatter'), sg.Button('Cancel')],
+                    [sg.Button('Formatter'), sg.Button('Quitter')],
                     [sg.Text('', size=(0, 1),key='OUTPUT')],
                     ]
         # Create the Window
@@ -170,13 +171,13 @@ class Formatter():
             event, values = self.window.read()
             # print(values)
 
-            if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes self.window or clicks cancel
+            if event == sg.WIN_CLOSED or event == 'Quitter': # if user closes self.window or clicks Quitter
                 break
 
-            if event=="Formatter" and (values[0] or values[1]) and values['Browse']:
+            if event=="Formatter" and (values[0] or values[1]) and values['Ouvrir un fichier']:
                 self.init_variable()
                 df=""
-                filename = values["Browse"]
+                filename = values["Ouvrir un fichier"]
                 df=self.init_dataframe(filename)
                 self.window["OUTPUT"].Update(value="Formattage en cours...")
                 

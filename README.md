@@ -1,6 +1,20 @@
-# Bienvenue sur le fichier de mise en forme
-1. Dans la barre au dessus, cliquez sur le bouton avec <button class="btn btn-default" title="redémarrer le noyau, et ré-exécuter tout le notebook (sans confirmation)"><i class="fa-forward fa"></i></button> les deux triangles noirs orientés à droites pour relancer et exécuter toutes les cellules.
-2. Les cellules de ce notebook seront jouées les unes après les autres.
-3. La toute dernière cellule produira le fichier excel correctement formatté, appelé "journal_provisoire_par_piece_clean.xls"
+# Bienvenue sur le guide d'utilisation de mise en forme Excel des exports GERCOP
+Cette application permet de correctement mettre en forme les exports de **Gercop** pour que la donnée soit mieux exploitable.
 
-<i class='fa fa-warning'></i> S'il apparaît une fenêtre indiquant que le noyau a planté, alors le fichier excel "journal_provisoire_par_piece.xls" est certainement manquant.
+Il est attendu un fichier de type **.xls** en entrée et est produit un fichier de type **.xlsx** à la racine de ce même fichier.
+
+1. Ouvrez le raccourci **Lancez-moi!**
+
+![Drag Racing](assets/0.png)
+
+2. Choisissez ensuite le fichier Excel que vous souhaitez convertir.
+
+![Drag Racing](assets/1.png)
+
+3. Choisissez ensuite le **type de fichier** puis cliquer sur **Formatter**.
+
+![Drag Racing](assets/2.png)
+
+4. Le fichier est bien généré et se trouve à la racine du fichier que vous avez souhaité convertir. Assurez-vous toutefois d'avoir bien sélectionné le bon format, car il est possible que le fichier soit tout de même généré même si le mauvais type de fichier a été sélectionné.
+
+![Drag Racing](assets/4.png)
